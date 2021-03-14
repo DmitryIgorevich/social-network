@@ -1,0 +1,73 @@
+.content {
+    background-color: white;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+.photo_block {
+}
+.photo {
+    position: relative;
+    padding: 120% 0 0 0;
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.wrap_btns {
+    padding: 20px 0 0 0;
+}
+.edit_btn {
+    margin: 0 0 10px 0;
+    a,
+    button {
+        color: rgba(31, 31, 97, 0.671);
+        letter-spacing: 0.4px;
+        background-color: rgba(89, 89, 143, 0.09);
+        text-align: center;
+        border-radius: 10px;
+        font-size: 15px;
+        width: 100%;
+        padding: 8px 15px;
+    }
+}
+.hidden_block {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    ul {
+        padding: 5px 0;
+        width: 100%;
+        transition: 300ms all ease;
+        background-color: rgba(0, 0, 0, 0.575);
+        transform: translateY(100%);
+        &.active {
+            transform: translateY(0);
+        }
+    }
+    li {
+        text-align: center;
+        color: rgb(128, 127, 127);
+        font-size: 14px;
+        width: 100%;
+        padding: 8px 10px;
+        transition: 0.3s all ease;
+        letter-spacing: 0.4px;
+        @media (min-width: 992px) {
+            &:hover {
+                color: rgb(211, 208, 208);
+            }
+        }
+    }
+}

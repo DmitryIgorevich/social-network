@@ -1,0 +1,17 @@
+.navigation {
+    flex: 0 0 18%;
+    padding: 0 5px;
+}
+.navigation_list {
+    li {
+        font-size: 16px;
+        margin: 0 0 8px 0;
+        a {
+            padding: 8px 10px;
+            border-radius: 10px;
+            display: block;
+            height: 100%;
+            transition: 0.3s all ease;
+        }
+    }
+}

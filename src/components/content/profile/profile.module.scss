@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    height: 100%;
+    margin: 0 -10px;
+}
+.little_block {
+    flex: 0 0 30%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+.big_block {
+    flex: 0 0 70%;
+    padding: 0 10px;
+}

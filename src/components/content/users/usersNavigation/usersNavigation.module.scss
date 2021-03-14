@@ -1,0 +1,40 @@
+.content {
+    background-color: white;
+    width: 100%;
+}
+.wrap {
+    ul {
+        padding: 6px 0;
+        position: relative;
+        li {
+            cursor: pointer;
+            font-size: 15px;
+            a {
+                color: rgba(56, 56, 129, 0.74);
+                width: 100%;
+                padding: 10px 20px;
+                display: block;
+                height: 100%;
+            }
+            font-weight: 500;
+            transition: 0.3s all ease;
+            @media (min-width: 992px) {
+                &:hover {
+                    background-color: rgba(85, 85, 182, 0.116);
+                }
+            }
+        }
+    }
+}
+.slider {
+    position: absolute;
+    transition: 0.3s all ease;
+    top: 6px;
+    left: 0;
+    border-radius: 3px;
+    width: 3px;
+    background-color: rgba(56, 56, 129, 0.74);
+}
+.active_link {
+    background-color: rgba(85, 85, 182, 0.116);
+}

@@ -1,0 +1,127 @@
+.wrap {
+    height: 100%;
+    padding: 10px 40px 20px 40px;
+}
+.form {
+    position: relative;
+    padding: 20px 0 0 0;
+    height: 100%;
+}
+.form_error {
+    box-shadow: 0 0 0 2px red;
+}
+.form_error_text {
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.row_input {
+    display: flex;
+    margin: 0 -10px 20px -10px;
+    align-items: center;
+    height: 100%;
+}
+.label_input {
+    padding: 0 10px;
+    font-size: 15px;
+    flex: 0 0 35%;
+    text-align: right;
+}
+
+.wrap_input {
+    padding: 0 10px;
+    flex: 1 1 auto;
+    display: flex;
+
+    input {
+        font-size: 15px;
+        padding: 5px 10px;
+        flex: 0 0 90%;
+        transition: 0.3s all ease;
+        box-shadow: 0 0 0 1px rgba(183, 183, 221, 0.904);
+        background-color: white;
+        &.input_error {
+            box-shadow: 0 0 0 2px red;
+        }
+    }
+    select {
+        font-size: 15px;
+        box-shadow: 0 0 0 1px rgba(183, 183, 221, 0.904);
+        flex: 0 0 90%;
+        padding: 5px 10px;
+    }
+}
+.error_img {
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+    align-items: center;
+    position: relative;
+    img {
+        height: 27px;
+        cursor: pointer;
+    }
+}
+.error_img_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(40px);
+    border-radius: 10px;
+    line-height: 18px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+}
+.wrap_btn {
+    margin: 30px -15px 0 -15px;
+    padding: 15px 0 0 0;
+    display: flex;
+    box-shadow: 0 -1px 0 0 rgba(183, 183, 221, 0.904);
+}
+.inner_btn {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    &:first-child {
+        justify-content: flex-end;
+    }
+    &:last-child {
+        justify-content: flex-start;
+        .button {
+            background-color: rgba(255, 0, 0, 0.233);
+            @media (min-width: 992px) {
+                &:hover {
+                    background-color: rgba(255, 0, 0, 0.397);
+                }
+            }
+        }
+    }
+}
+.button {
+    padding: 5px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s all ease;
+    background: rgba(56, 56, 170, 0.308);
+    letter-spacing: 0.6px;
+    @media (min-width: 992px) {
+        &:hover {
+            background: rgba(56, 56, 170, 0.541);
+        }
+    }
+}
+.btn_disabled {
+    opacity: 0.5;
+}

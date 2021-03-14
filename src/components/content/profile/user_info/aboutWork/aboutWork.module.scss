@@ -1,0 +1,24 @@
+.wrap {
+    margin: 15px 0 0 0;
+    display: flex;
+}
+.name_info {
+    flex: 0 0 30%;
+    font-size: 15px;
+    color: gray;
+}
+.desciption_info {
+    flex: 1 1 auto;
+    position: relative;
+    font-size: 16px;
+    word-break: break-all;
+    color: rgba(52, 52, 124, 0.904);
+}
+.emty_field {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 0.5px;
+    background-color: rgba(52, 52, 124, 0.904);
+}

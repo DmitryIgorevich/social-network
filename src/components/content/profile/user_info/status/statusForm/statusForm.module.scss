@@ -1,0 +1,97 @@
+.wrap_form {
+    box-shadow: 1px 0 0 0 rgba(182, 182, 211, 0.602), 2px 0 0 0 rgba(182, 182, 211, 0.842),
+        -1px 0 0 0 rgba(182, 182, 211, 0.602), -2px 0 0 0 rgba(182, 182, 211, 0.842),
+        0 1px 0 0 rgba(182, 182, 211, 0.602), 0 -1px 0 0 rgba(182, 182, 211, 0.602);
+    padding: 15px;
+    margin: 0 -15px;
+    transition: 0.3s all ease;
+    background-color: white;
+    &._error_form {
+        box-shadow: 1px 0 0 0 rgba(255, 0, 0, 0.534), 2px 0 0 0 rgba(255, 0, 0, 0.733),
+            -1px 0 0 0 rgba(255, 0, 0, 0.568), -2px 0 0 0 rgba(255, 0, 0, 0.774), 0 1px 0 0 rgba(255, 0, 0, 0.602),
+            0 -1px 0 0 rgba(255, 0, 0, 0.596);
+    }
+}
+.wrap_input {
+    position: relative;
+}
+.error_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    img {
+        cursor: pointer;
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+        top: 4.5px;
+        right: 10px;
+        height: 28px;
+    }
+}
+.error_text_warn {
+    display: none;
+}
+@media (min-width: 992px) {
+    .error_text_warn {
+        position: absolute;
+        top: 4.5px;
+        right: 45px;
+        height: 45px;
+        background-color: rgb(209, 28, 28);
+        color: white;
+        font-weight: 600;
+        padding: 0 15px;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+
+.textarea {
+    width: 100%;
+    border-radius: 15px;
+    resize: none;
+    font-size: 14px;
+    padding: 8px 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    color: black;
+    transition: 0.3s all ease;
+    background-color: rgba(128, 128, 148, 0.267);
+    &:focus {
+        box-shadow: 2px 2px 0 0 rgba(183, 183, 221, 0.904);
+        background-color: rgba(183, 183, 221, 0.534);
+    }
+    &.input_error {
+        box-shadow: inset 0 0 0 2px rgba(255, 0, 0, 0.596);
+    }
+}
+
+.btn_save {
+    margin: 10px 0 0 0;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.3s all ease;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.432);
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: rgba(0, 128, 0, 0.671);
+        }
+    }
+    &.disabled_btn {
+        opacity: 0.3;
+    }
+}
+.form_error_text {
+    margin: 10px auto 10px auto;
+    font-size: 16px;
+    color: red;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

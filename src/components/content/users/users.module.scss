@@ -1,0 +1,20 @@
+.row {
+    display: flex;
+    margin: 0 -10px;
+    align-items: flex-start;
+}
+.little_block {
+    flex: 0 0 30%;
+    padding: 0 10px;
+    display: flex;
+    position: sticky;
+    top: 70px;
+}
+.big_block {
+    flex: 0 0 70%;
+    padding: 0 10px;
+}
+.content {
+    background-color: white;
+    width: 100%;
+}

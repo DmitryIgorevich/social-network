@@ -1,0 +1,28 @@
+.wrap {
+    margin: 20px 0 0 0;
+    padding: 0 0 20px 0;
+    box-shadow: 0px 1px 0 0 rgba(182, 182, 211, 0.45);
+}
+.list {
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+    box-shadow: 0px -1px 0 0 rgba(182, 182, 211, 0.45);
+}
+.wrap_btn {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 100%;
+    letter-spacing: 0.5px;
+    padding: 8px 15px;
+    color: rgba(52, 52, 124, 0.904);
+    background-color: white;
+    font-size: 15px;
+    transition: 0.3s all ease;
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: rgba(183, 183, 221, 0.253);
+        }
+    }
+}

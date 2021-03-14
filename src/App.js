@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Content from './components/content/content';
+import Header from './components/header/header';
+// 
+// 
+function App(props) {
+	let { auth, logout } = props;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<div className='wrapper'>
+				<Header auth={auth} logout={logout} />
+				<Content />
+			</div>
+		</div>
+	);
 }
-
 export default App;

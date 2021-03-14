@@ -1,0 +1,120 @@
+.wrap_popup {
+	background-color: rgba(0, 0, 0, 0.781);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.inner_popup {
+	width: 50%;
+	background-color: white;
+	min-height: 200px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	cursor: auto;
+}
+.title_popup {
+	background-color: rgba(97, 97, 173, 0.294);
+	display: flex;
+	box-shadow: 0 1.5px 0 0 rgba(94, 110, 139, 0.548);
+	&:last-child {
+		text-align: center;
+		font-size: 14px;
+		padding: 6px 15px;
+		line-height: 16px;
+		margin: 15px 0 0 0;
+		box-shadow: 0 -1.5px 0 0 rgba(94, 110, 139, 0.548);
+	}
+}
+.text_title {
+	padding: 6px 15px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 30px;
+	flex: 1 1 auto;
+}
+.close_popup {
+	flex: 0 0 40px;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.form {
+	width: 100%;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	input {
+		width: 0;
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+.error_form_text {
+	color: red;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.wrap_content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	padding: 15px 10px;
+	flex: 1 1 auto;
+}
+.content_text {
+	font-size: 14px;
+}
+.btn_trigger_file {
+	margin: 15px -15px 0 -15px;
+	display: flex;
+	justify-content: center;
+}
+.wrap_btn {
+	padding: 0 15px;
+	button {
+		font-size: 13px;
+		transition: 0.3s all ease;
+		color: white;
+		background-color: rgba(63, 63, 124, 0.644);
+		border-radius: 9px;
+		padding: 5px 35px;
+		letter-spacing: 0.5px;
+		@media (min-width: 992px) {
+			&:hover {
+				background-color: rgba(63, 63, 124, 0.87);
+			}
+		}
+	}
+}
+.preview_img {
+	padding: 10px 10px 0 10px;
+	height: 100%;
+	img {
+		width: 100%;
+		max-height: 400px;
+		transition: 0.3s all ease;
+		object-fit: contain;
+		&.error_form {
+			box-shadow: 0 0 0 3px red;
+		}
+	}
+}
+.cursorNotAllowed {
+	cursor: not-allowed;
+}
+.btnDisabled {
+	opacity: 0.4;
+}

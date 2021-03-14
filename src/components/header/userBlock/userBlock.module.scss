@@ -1,0 +1,44 @@
+.profile_block {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    align-items: center;
+}
+.wrap_profile {
+    height: 100%;
+    position: relative;
+}
+.wrap_profile_btn {
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+    transition: 0.3s all ease;
+    &:hover {
+        background-color: rgba(63, 63, 151, 0.123);
+    }
+}
+.profile_name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 15px 0 0;
+}
+.avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100%;
+    img {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+.wrap_login {
+    a {
+        padding: 10px 10px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+    }
+}

@@ -1,0 +1,36 @@
+.wrap_user_settings {
+    background-color: white;
+    box-shadow: inset 0 0 0 1px rgba(47, 40, 138, 0.472);
+    position: absolute;
+    right: 0px;
+    width: 80%;
+    min-width: 170px;
+    opacity: 0;
+    transition: 0.3s all ease;
+    visibility: hidden;
+    top: 100px;
+
+    &.active {
+        opacity: 1;
+        top: 115%;
+        visibility: visible;
+    }
+}
+.user_settings_list {
+    display: flex;
+    flex-direction: column;
+}
+.user_list_item {
+    transition: 0.3s all ease;
+    display: block;
+}
+.list_item {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    background-color: inherit;
+    color: rgba(23, 28, 95, 0.904);
+    width: 100%;
+    text-align: right;
+}
